@@ -491,7 +491,7 @@ export default function Home() {
 
                 <hr />
                 <p className="text-lg">
-                  🧮 รวม {car.years} ปี:{' '}
+                  🧮 สรุปค่าใช้จ่ายรวม {car.years} ปี:{' '}
                   <b>{fmt(r.totalCost)}</b>
                 </p>
               </div>
