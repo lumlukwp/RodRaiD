@@ -64,7 +64,7 @@ const PRESETS: Record<
     resalePct: 10,
     miscellaneous: 0,
     fuelPerKm: 0.8,
-    maintenanceAtEnd: 300000,
+    maintenanceAtEnd: 400000,
   },
 }
 
@@ -269,7 +269,7 @@ export default function Home() {
                   }
                 />
 
-                <label>ส่วนลด</label>
+                <label>ส่วนลดตัวรถ</label>
                 <input
                   type="text"
                   value={fmtInput(car.discount)}
@@ -282,7 +282,7 @@ export default function Home() {
                   }
                 />
 
-                <label>ส่วนลดอื่น ๆ</label>
+                <label>ส่วนลดอื่น ๆ เช่น ฟรีค่าบำรุงรักษา</label>
                 <input
                   type="text"
                   value={fmtInput(car.otherDiscount)}
@@ -392,7 +392,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  ⛽ ค่าเชื้อเพลิง/ปี:{' '}
+                  ⛽ ค่าเชื้อเพลิงต่อปี:{' '}
                   <b>{fmt(r.fuelPerYear)}</b>
                 </p>
 
@@ -476,7 +476,7 @@ export default function Home() {
                   }
                 />
 
-                <label>ค่าบำรุงรักษาเมื่อครบอายุ (ครั้งเดียว)</label>
+                <label>ค่าบำรุงรักษาเมื่อครบอายุ (ครั้งเดียว) <br/> เช่น อินเวอร์เตอร์ หรือ แบตเตอรี่</label>
                 <input
                   type="text"
                   value={fmtInput(car.maintenanceAtEnd)}
